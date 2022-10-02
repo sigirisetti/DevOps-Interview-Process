@@ -541,13 +541,13 @@
 **********************
 
 
-## Architecture:
+## Architecture
 
 
 ******************
 
 
-## Infrastructure as Code:
+## Infrastructure as Code
 
 
 
@@ -561,5 +561,28 @@
 
 ## Cloud Computing
 
+- Q1). What are the advantages of Cloud Computing?
+
+- Ans: 
+
+  - Cloud Computing technology helps the users avail of a more extensive network of global web servers, This directly boosts the productivity and performance of the web platform and makes development efficient in terms of cost and time. 
+  - Cloud computing also increments the data storage and data backup capacities of the web servers. Due to the boosted interaction between different web servers, the server capabilities are made much more powerful. 
+
+- Q2). Describe the different cloud service models?
+
+- Ans
+  
+  - There are predominantly three models of cloud service. Each come with their own sets of advantages and are at variance with each other with regards to one or the other features. Before opting for one of them, let’s understand their characteristics and gauge how they fit within our individual requirements. 
+
+  - IaaS- Infrastructure as a Service (IaaS) consists of highly automated compute resources. Businesses can avail of on-demand hardware resources through IaaS without having to make any upfront hardware purchase. IaaS is highly scalable and can assist in quickly accessing and monitoring computers, database storage, and other networking services. 
+  - PaaS-Platform as a Service (PaaS) is helpful in customizing applications that require cloud components. PaaS helps in streamlining the workflow in the situations which involve more than one developer. While developers can manage the applications, businesses get to use the network and storage. 
+
+  - SaaS- Software as a Service (SaaS) refers to the service model where applications are delivered to the user using cloud platforms, and the third party can then manage the applications. They are incredibly convenient to use since they do not require any additional installations. 
+
+- Q3). What are some of the popularly used cloud computing services?
+
+- Ans: 
+  - Cloud computing has come to be used widely across industries. Some of the top players, in this case, are Windows Azure, Amazon Web Services, and Google Cloud Platform. These are the broadly used cloud platforms. 
+  - However, there are emerging cloud services available in the market. Other popularly used cloud computing services include iOS Cloud, Alibaba Cloud, IBM Cloud, and Oracle. 
 
 **************
