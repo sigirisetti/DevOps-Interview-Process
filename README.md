@@ -1,7 +1,7 @@
 # Topics  ![Learn](https://img.shields.io/badge/Interview-Preparation-blueviolet?style=for-the-badge)
 
 - [Topics !To Cover](#topics-cover)
-  - [DevOps Interview Questions](#devops-interview-questions)
+  - [DevOps Interview Process](#devops-interview-process)
   - [Programming](#programming)
   - [OS-Linux](#os-linux)
   - [Networking](#networking)
@@ -14,7 +14,7 @@
   - [Cloud Computing](#cloud-computing)
   
 ********
-## DevOps Interview Questions
+## DevOps Interview Process
 
 
 - Q1) Can you tell us the fundamental differences between DevOps & Agile?
