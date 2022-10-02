@@ -11,7 +11,7 @@
   - [Architecture:](#architecture)
   - [Infrastructure as Code:](#infrastructure-as-code)
   - [Setup](#setup)
-  - [Testing](#testing)
+  - [Cloud Computing](#Cloud Computing)
   
 ********
 ## DevOps Interview Questions
@@ -171,13 +171,21 @@
     - Removes bottlenecks from the CI pipeline. It results in increased deployment frequency and decreased number of failed deployments. Both of them are important DevOps KPIs
 
 - Q13) What do you understand by containers?
-  - Ans: Containers are a form of lightweight virtualization that help in providing isolation among processes. Containers are heavier than a chroot but lighter than a hypervisor.
+
+ - Ans: 
+  - Containers are a form of lightweight Software virtualization that help in providing isolation among processes using Namespaces,CGroups,Selinux,Copy-On-Write.
+  - Containers are heavier than a chroot but lighter than a hypervisor based VMs.
 
 - Q14) Microservices are a core part of DevOps. Can you name any two popular Java development frameworks for creating microservices?
-  - Ans: There are several Java frameworks that allow creating microservices. However, Eclipse MicroProfile and Spring Boot stand out from the herd as the two leading Java development frameworks used in DevOps for creating microservices.
+  
+ - Ans: 
+  - There are several Java frameworks that allow creating microservices. However, Eclipse MicroProfile and Spring Boot stand out from the herd as the two leading Java development frameworks used in DevOps for creating microservices.
 
 - Q15) What do you understand by a Version Control System (VCS)? Define its uses.
-  - Ans: A Version Control System or VCS is a system that is capable of recording changes made to a file or a group of files over time. Git and Mercurial are two of the most popular version control systems. Important uses of a VCS are:
+  
+ - Ans: 
+  - A Version Control System or VCS is a system that is capable of recording changes made to a file or a group of files over time. 
+  - Git and Mercurial are two of the most popular version control systems. Important uses of a VCS are:
 
    - Check what was the last modification that caused a problem
    - Compare the changes made over time
@@ -195,10 +203,15 @@
     - git commit -m “commit message”
 
 - Q17) What are post mortem meetings?
-  - Ans: Many times there is a need to discuss what went wrong during a DevOps process. For this, post mortem meetings are arranged. These meetings yield steps that should be taken to avoid the same failure or set of failures in the future for which the meeting was arranged in the first place.
+
+- Ans: 
+    - Many times there is a need to discuss what went wrong during a DevOps release process. For this, post mortem meetings are arranged. These meetings yield steps that should be taken to avoid the same failure or set of failures in the future for which the meeting was arranged in the first place.
 
 - Q18) Draw a comparison between Asset Management and Configuration Management.
-  - Ans: The process of monitoring as well as maintaining things of value to an entity or group is called an Asset Management.
+
+- Ans:
+
+  - The process of monitoring as well as maintaining things of value to an entity or group is called an Asset Management.
 
  - Configuration Management refers to the process of controlling, identifying, planning for, and verifying the configuration items within service in support of Change Management.
 
@@ -223,81 +236,30 @@
     - Orchestration – Arrangement of several automated tasks
     - Packaging – Activities involved when the release is ready for deployment
     - Provisioning – Ensuring that the infrastructure changes arrive just-in-time with the code that requires it
-    - Unit testing – Meant for testing individual units or components
-
-- Q21) What Do You Know about DevOps?
-
-  - Your answer must be simple and straightforward. Begin by explaining the growing importance of DevOps in the IT industry. Discuss how such an approach aims to synergize the efforts of the development and operations teams to accelerate the delivery of software products, with a minimal failure rate. Include how DevOps is a value-added practice, where development and operations engineers join hands throughout the product or service lifecycle, right from the design stage to the point of deployment.
+    - Unit testing – Meant for testing individual units or component.
 
 
-- Q22) Why Has DevOps Gained Prominence over the Last Few Years?
+- Q21) How Would You Explain the Concept of “Infrastructure as Code”(IaC)?
 
-  - Before talking about the growing popularity of DevOps, discuss the current industry scenario. Begin with some examples of how big players such as Netflix and Facebook are investing in DevOps to automate and accelerate application deployment and how this has helped them grow their business. Using Facebook as an example, you would point to Facebook’s continuous deployment and code ownership models and how these have helped it scale up but ensure the quality of experience at the same time. Hundreds of lines of code are implemented without affecting quality, stability, and security.
+  - It is a good idea to talk about IaC as a programmable infrastructure, where infrastructure is perceived in the same way as any other code. 
+  - Describe how the traditional approach to managing infrastructure is taking a back seat and how manual configurations, obsolete tools, and custom scripts are becoming less reliable. 
+  - Next, accentuate the benefits of IaC and how changes to IT infrastructure can be implemented in a faster, safer and easier manner using IaC. 
+  - Include the other benefits of IaC like applying regular unit testing and integration testing to infrastructure configurations, and maintaining up-to-date infrastructure documentation.
 
-  - Your next use case should be Netflix. This streaming and on-demand video company follow similar practices with fully automated processes and systems. Mention the user base of these two organizations: Facebook has 2 billion users while Netflix streams online content to more than 100 million users worldwide.
+  - If the candidate have completed a certification on Amazon Web Services (AWS), and are interviewing for niche roles such as AWS-certified DevOps engineer, here are some AWS DevOps interview questions that you must be prepared for:
 
-  - These are great examples of how DevOps can help organizations to ensure higher success rates for releases, reduce the lead time between bug fixes, streamline and continuous delivery through automation, and an overall reduction in manpower costs.
-
-- Q23) Which Are Some of the Most Popular DevOps Tools? Do You Have Experience Working with Any of These Tools?
-
-  - The more popular DevOps tools include:
-
-     - Selenium
-     - Puppet
-     - Chef
-     - Git
-     - Jenkins
-     - Ansible
-     - Docker
-
-- Q24) Do You Want to Master All These Devops Tools?
-
-  - Thoroughly describe any tools that you are confident about, what it’s abilities are and why you prefer using it. For example, if you have expertise in Git, you would tell the interviewer that Git is a distributed Version Control System (VCS) tool that allows the user to track file changes and revert to specific changes when required. Discuss how Git’s distributed architecture gives it an added edge where developers make changes locally and can have the entire project history on their local Git repositories, which can be later shared with other team members.
-
-- Q25) What Is Version Control and Why Should VCS Be Used?
-
-  - Define version control and talk about how this system records any changes made to one or more files and saves them in a centralized repository. VCS tools will help you recall previous versions and perform the following:
-
-  - Go through the changes made over a period of time and check what works versus what doesn’t.
-    - Revert specific files or specific projects back to an older version.
-    - Examine issues or errors that have occurred due to a particular change
-
-  - Using VCS gives developers the flexibility to simultaneously work on a particular file and all modifications can be logically combined later.
-
-
-- Q26) Is There a Difference Between Agile and DevOps? If Yes, Please Explain.
-
-  - As a DevOps Engineer, interview questions like this are quite expected. Start by describing the obvious overlap between DevOps and Agile. Although the implementation of DevOps is always in sync with Agile methodologies, there is a clear difference between the two. The principles of Agile are associated with seamless production or development of a piece of software. On the other hand, DevOps deals with the development, followed by deployment of the software, ensuring faster turnaround time, minimum errors, and reliability.
-
-- Q27) Why Are Configuration Management Processes and Tools Important?
-
-  - Talk about multiple software builds, releases, revisions, and versions for each software or testware that is being developed. Move on to explain the need for storing and maintaining data, keeping track of development builds and simplified troubleshooting. Don’t forget to mention the key CM tools that can be used to achieve these objectives. Talk about how tools like Puppet, Ansible, and Chef help in automating software deployment and configuration on several servers.
-
-- Q28) How Is Chef Used as a CM Tool?
-
-  - The chef is considered to be one of the preferred industry-wide CM tools. Facebook migrated its infrastructure and backend IT to the Chef platform, for example. Explain how Chef helps you to avoid delays by automating processes. The scripts are written in Ruby. It can integrate with cloud-based platforms and configure new systems. It provides many libraries for infrastructure development that can later be deployed within a software. Thanks to its centralized management system, one Chef server is enough to be used as the center for deploying various policies.
-
-
-- Q29) How Would You Explain the Concept of “Infrastructure as Code”(IaC)?
-
-  - It is a good idea to talk about IaC as a concept, which is sometimes referred to as a programmable infrastructure, where infrastructure is perceived in the same way as any other code. Describe how the traditional approach to managing infrastructure is taking a back seat and how manual configurations, obsolete tools, and custom scripts are becoming less reliable. Next, accentuate the benefits of IaC and how changes to IT infrastructure can be implemented in a faster, safer and easier manner using IaC. Include the other benefits of IaC like applying regular unit testing and integration testing to infrastructure configurations, and maintaining up-to-date infrastructure documentation.
-
-  - If you have completed a certification on Amazon Web Services (AWS), and are interviewing for niche roles such as AWS-certified DevOps engineer, here are some AWS DevOps interview questions that you must be prepared for:
-
-- Q30) What Is the Role of AWS in DevOps?
+- Q22) What Is the Role of AWS in DevOps?
 
   - When asked this question in an interview, get straight to the point by explaining that AWS is a cloud-based service provided by Amazon that ensures scalability through unlimited computing power and storage. AWS empowers IT enterprises to develop and deliver sophisticated products and deploy applications on the cloud. Some of its key services include Amazon CloudFront, Amazon SimpleDB, - - - Amazon Relational Database Service, and Amazon Elastic Computer Cloud. Discuss the various cloud platforms and emphasize any big data projects that you have handled in the past using cloud infrastructure.
 
 
-- Q31) How Is IaC Implemented Using AWS?
+- Q23) How Is IaC Implemented Using AWS?
 
   - Start by talking about the age-old mechanisms of writing commands onto script files and testing them in a separate environment before deployment and how this approach is being replaced by IaC. Similar to the codes written for other services, with the help of AWS, IaC allows developers to write, test, and maintain infrastructure entities in a descriptive manner, using formats such as JSON or YAML. This enables easier development and faster deployment of infrastructure changes.
 
-  - Go through this Simplilearn video on “DevOps Interview Questions” delivered by our DevOps certification expert that will help you crack any interview.
 
 
-
-- Q32) What are the success factors for Continuous Integration?
+- Q24) What are the success factors for Continuous Integration?
 
   - Examples of answers:
       - Maintain a code repository
@@ -311,33 +273,35 @@
       - Everyone can see the results of the latest build
       - Automate deployment
 
-- Q33) How would you implement CI (continuous delivery) - end to end, including source control, branches, tools, etc. ?
+.....................................
 
-- Q34) What is Continious Delivery? Continious Deployment?
+- Q25) How would you implement CI (continuous delivery) - end to end, including source control, branches, tools, etc. ?
+
+- Q26) What is Continious Delivery? Continious Deployment?
   
-- Q35) What is the difference between Continuous Integration, Continious Delivery and Continious Deployment?
+- Q27) What is the difference between Continuous Integration, Continious Delivery and Continious Deployment?
 
-- Q36) What’s the difference between git and github ? What about git and SVN ?
+- Q28) What’s the difference between git and gitlab/github/bitbucket ? What about git and SVN ?
 
-- Q37) What is git rebase?
+- Q29) What is git rebase?
 
-- Q38) In Git how do you revert a commit that has already been pushed and made public?
+- Q30) In Git how do you revert a commit that has already been pushed and made public?
 
-- Q39)  What is puppet/chef/ansible used for? What are the advantages over shell scripts ?
+- Q31)  What is puppet/chef/ansible used for? What are the advantages over shell scripts ?
 
-- Q40) What do you understand by “Infrastructure as code”? How does it fit into the DevOps methodology? What purpose does it achieve?
+- Q32) What do you understand by “Infrastructure as code”? How does it fit into the DevOps methodology? What purpose does it achieve?
 
-- Q41) How do you give your developers access to the production logs ?
+- Q33) How do you give your developers access to the production logs ?
 
-- Q42) Tell me about the worst-run/best-run outage you’ve been a part of. What made it bad/well-run?
+- Q34) Tell me about the worst-run/best-run outage you’ve been a part of. What made it bad/well-run?
 
-- Q43) How do you monitor your application ? How do you make sure it is working ? How do you get alerts when it stops working ?
+- Q35) How do you monitor your application ? How do you make sure it is working ? How do you get alerts when it stops working ?
 
-- Q44) What would be the availability and performance metrics for a key value store ? What about for MySQL replication ?
+- Q36) What would be the availability and performance metrics for a key value store ? What about for MySQL replication ?
 
-- Q45) How would you deploy software to 5000 systems?
+- Q37) How would you deploy software to 5000 systems?
 
-- Q46) What is caching ? Where should a large scale application cache, and what data should be cached ?
+- Q38) What is caching ? Where should a large scale application cache, and what data should be cached ?
 
 
 ************
@@ -430,7 +394,7 @@
   - sed
 
 
-- Q13)Command line demo:
+- Q13) Command line demo:
   - Search for "my konfu is the best" in all *.py files
   - Replace the occurrence of "my konfu is the best" with "I'm a linux jedi master" in all *.txt files
   - Find all files which have been accessed within the last 30 days
@@ -518,10 +482,6 @@
 - Q8) What is the difference between DNAT and SNAT ? When do you use either ?
 
 - Q9) What is a virtual IP address? What is a cluster?
-  
-- Q10) What is IPv6 ? Why should we care?
-
-
 
 
 *******************
@@ -599,4 +559,4 @@
 **************
 
 
-## Testing
+## Cloud Computing
