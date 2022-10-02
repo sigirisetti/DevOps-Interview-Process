@@ -585,4 +585,9 @@
   - Cloud computing has come to be used widely across industries. Some of the top players, in this case, are Windows Azure, Amazon Web Services, and Google Cloud Platform. These are the broadly used cloud platforms. 
   - However, there are emerging cloud services available in the market. Other popularly used cloud computing services include iOS Cloud, Alibaba Cloud, IBM Cloud, and Oracle. 
 
+- Q4) What is Cloud-Native?
+- Ans: 
+  - Cloud-native definition: Something is cloud-native if it is created to leverage cloud characteristics.
+  - It’s all about capabilities delivered as a service that is scalable and elastic, metered by use, service-based, ubiquitous by means of internet technologies, and shared. 
+
 **************
