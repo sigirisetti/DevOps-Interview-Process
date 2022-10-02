@@ -2,16 +2,16 @@
 
 - [Topics !To Cover](#topics-cover)
   - [DevOps Interview Questions](#devops-interview-questions)
-  - [Programming:](#programming)
-  - [OS-Linux:](#os-linux)
-  - [Networking:](#networking)
-  - [Security:](#security)
+  - [Programming](#programming)
+  - [OS-Linux](#os-linux)
+  - [Networking](#networking)
+  - [Security](#security)
   - [Docker](#docker)
   - [kubernetes](#kubernetes)
-  - [Architecture:](#architecture)
-  - [Infrastructure as Code:](#infrastructure-as-code)
-  - [Setup](#setup)
-  - [Cloud Computing](#Cloud Computing)
+  - [Architecture](#architecture)
+  - [Infrastructure as Code](#infrastructure-as-code)
+  - [InfrastructureSetup](#infrastructure-setup)
+  - [Cloud Computing](#cloud-computing)
   
 ********
 ## DevOps Interview Questions
@@ -553,10 +553,13 @@
 
 *******************
 
-## Setup
+## Infrastructure Setup
 
 
 **************
 
 
 ## Cloud Computing
+
+
+**************
