@@ -1,0 +1,436 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Satyanarayan Sure}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Indian Citizen, holding Singapore EP(G6355189P)}}
+
+\NewEntry{email}{\href{mailto:satyanarayana.sure@gmail.com}{satyanarayana.sure@gmail.com}} % Email address
+
+\NewEntry{website}{\href{https://github.com/satyasure}{https://github.com/satyasure}} % Personal website
+
+\NewEntry{phone}{(H) +65 9338 0595} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+
+\noindent\spacedlowsmallcaps{Current Role}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{Cloud and DevOps Solutions Architect}
+
+
+\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+\\
+\Description{\textbf{To Learn and excel Cloud, DevOps technologies and Cloud Solutions Architecture}}\vspace{1em} % Goal text
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Education, Certifications and Awards
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\spacedlowsmallcaps{Education}
+\vspace{2em} % Extra space between major sections
+\Description{\MarginText{PG Diploma}}
+\NewEntry{2006-2007}{Embedded Systems and Design. Pune University., India}
+
+%------------------------------------------------
+\Description{\MarginText{M.Sc}}
+\NewEntry{2004-2006}{Electronics and Communications. Andhra University., India}
+%------------------------------------------------
+
+\Description{\MarginText{B.Sc}}
+\NewEntry{2001-2004}{BSc. Physics. Acharya Nagarjuna University., India}
+
+\quad\newline
+%------------------------------------------------
+
+%------------------------------------------------
+% Certifications
+%------------------------------------------------
+
+\spacedlowsmallcaps{Certifications}
+\quad\newline
+
+\Description{\ \ $\cdotp$\ \ CNCF Certified Kubernetes Administrator (CKA)}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ Azure Cloud Certified DevOps Expert (AZ-400)}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ AWS Cloud Practitioner Foundational – Practitioner }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ AWS Cloud Certified Solutions Architect – Associate}
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ HashiCrop Certified Terraform Cloud Engineer – Associate}
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ Azure Cloud Administrator Associate (AZ-104) }
+%------------------------------------------------
+\spacedlowsmallcaps{Past Certifications}
+\quad\newline
+
+\Description{\ \ $\cdotp$\ \ RHCSA Red Hat Certified Administrator (RHEL 6)}
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ RHCE Red Hat Certified Engineer (RHEL 6)}
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ Oracle Solaris Certified System administration (S.C.S.A) }
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ HP Cloud service Automation 4.2.x Certification.}
+\Description{\ \ $\cdotp$\ \ ITIL V3 Foundation Certified }
+\vspace{-0.5em} % Netive vertical space to counteract the vertical space between every \Description command
+\quad\newline
+
+%------------------------------------------------
+% Recognitions
+%------------------------------------------------
+
+\spacedlowsmallcaps{Recognitions}
+\newline\quad\\\quad\\
+\Description{\MarginText{Awards}2019\ \ $\cdotp$\ \ Going Extra Mile Cr\'edit-Agricole Client Award}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2017\ \ $\cdotp$\ \ Pragathi Best Automation Yearly Award}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2016\ \ $\cdotp$\ \ Best Individual Cr\'edit-Agricole Client Award}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2008\ \ $\cdotp$\ \ Feather in My Cap Best Team Player Award}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+
+\Description{\MarginText{Advanced}
+	
+	\begin{itemize}
+		\item \textbf{Cloud Technologies}
+		\begin{itemize}
+			\item AWS, Azure, GCP and HPCASA
+		\end{itemize}
+		\item \textbf{Container and Orchestration}
+		\begin{itemize}
+			\item Kubernetes, Docker, Podman, GitOPs and ArgoCd
+		\end{itemize}
+		\item \textbf{Kubernetes Package Management}
+		\begin{itemize}
+			\item Helm, Kustomize
+		\end{itemize}
+		\item \textbf{Configuration Management}
+		\begin{itemize}
+			\item Ansible, RunDeck
+		\end{itemize}
+		\item \textbf{Infrastructure as Code}
+		\begin{itemize}
+			\item Terraform, CloudFormation, Packer
+		\end{itemize}
+		\item \textbf{Scheduling and Automation}
+		\begin{itemize}
+			\item Control-M, Autosys, AFT
+		\end{itemize}
+		\item \textbf{Programming}
+		\begin{itemize}
+			\item Python, Perl
+		\end{itemize}
+	\end{itemize}
+}
+
+\Description{\MarginText{Intermediate}
+	
+	\begin{itemize}
+		\item \textbf{Scripting and Programming Languages}
+		\begin{itemize}
+			\item Bash, Korn Shell Scripting ,Go lang, and Core Java
+		\end{itemize}
+		\item \textbf{Databases}
+		\begin{itemize}
+			\item AWS RDS, Oracle, MS SQL, Liquibase, and Flyway
+		\end{itemize}
+		\item \textbf{No SQL}
+		\begin{itemize}
+			\item MongoDB, DynamoDB and ETCD
+		\end{itemize}
+		\item \textbf{Process}
+		\begin{itemize} 
+			\item Agile,Waterfall and DevSecOps
+		\end{itemize}
+		\item \textbf{DevOps} 	
+		\begin{itemize} 
+			\item Git, GitLab, Jenkins, SonarQube, Nexus, Artifactory, Harbhour, Kafka, Trivy, Xray and Clair.
+		\end{itemize}
+		\item \textbf{Observability and Monitoring} 
+		\begin{itemize}
+			\item ELK and EFK Stack ,Prometheus and Grafana, HPOMI and Dynatrace.
+		\end{itemize}
+	\end{itemize}
+}
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{2em} % Extra space between major sections
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+%------------------------------------------------
+%--Experience 1
+%------------------------------------------------
+
+\NewEntry{Nov-2018--Present}{ Cloud and DevOps Solutions Architect}
+
+\Description{\MarginText{Credit Agricole, Singapore}
+	\begin{itemize}
+		\item \textbf{Cloud Design and Architecture}
+		\begin{itemize}
+			\item Provide leadership and guidance accross the Cloud platforms, Acting as a subject mater expert and Leading teams to follow best pratices and techninques.
+			\item The functional,technical requirements gathering and guide appropriate use of AWS, GCP and Azure Architectural design principles.
+			\item Estimating AWS costs and identifying cost control mechanisms by applying FinOps principles
+			\item Good knowledge on Application Migrations and Data migrations from On-premises to AWS, Azure and GCP Public Cloud platforms.
+		\end{itemize}
+		\item \textbf{Cloud Infrastructure Implmentation}
+		\begin{itemize}
+			\item Experienced with "on premise (VMWare vSphere) to cloud" migrations and IT transformations with the aid of AWS solutions. Focusing on high-availability, fault tolerance, and auto scaling using AWS Cloud native services
+			\item Configured and managed various AWS services including EC2, RDS, VPC, S3, Glacier, AWS Backup, Cloud watch, Cloud front and route 53 etc.
+			\item Experienced in designing cloud models for Infrastructure-as-a-service (IaaS), Platform-as-a-service (PaaS) and Software as-a service (SaaS). 
+			\item Designed and Implemented CI/CD DevSecOps Delivery systems with an innovative test framework that allowed for significant reduction of capital expense requirements through equipment allocation and resue.
+		\end{itemize}
+		\item \textbf{Cloud Security Achitecture}
+		\begin{itemize}
+			\item Leading Cloud platform team in ensuring top level security around the cloud platforms and accounts.
+			\item Evaluate and design cloud security solutions and capabilities that are clearly aligned with business, technology, and threat drivers and internal standards.
+			\item Conduct security reviews of new and existing cloud providers using industry and vendor best practices.
+			\item Hands-on experience on Architecting and securing the Infrastructure on AWS using IAM, KMS, API Gateway, Cloud Trail, CloudWatch, config, trusted advisor, Security Groups, NACL etc. 
+		\end{itemize}
+		\item \textbf{Cloud High-availability, fault-tolerance and auto-scaling Achitecture}
+		\begin{itemize}
+			\item Deploying aplications into multiple availability zones for high availbility
+			\item Cloud configuration for enabling more resources during high load and measuring the percentage of time that systems are available.
+		\end{itemize}
+		\item \textbf{Cloud Management and Monitoring}
+		\begin{itemize}
+			\item Expertise on AWS organizations including centralized cloud logs and security parameters.
+		\end{itemize}
+	\end{itemize}
+}
+%------------------------------------------------
+%--Experience 2
+%------------------------------------------------
+
+
+\NewEntry{July 2013 - Oct 2018}{Application Support Lead}
+
+\Description{\MarginText{Credit Agricole, Singapore}
+	\begin{itemize}
+		\item \textbf{Infrastructure Solutions Design}
+		\begin{itemize}
+			\item Managing large scale Microsoft HyperV and VMWare vSphere infrastracture in a distributed and highly available critical infrastructure.
+			\item Designed, implemented and Migrated all VMWare vSphere infrastracture and services within on-premises CMP service environment.
+			\item Good knowledge on Application Migrations and Data migrations from On-premises to AWS, and GCP Cloud
+			\item Migrating servers from on-premises data centres to cloud by using CMP database migration service and other conventional methods such as Import/export, backup and restore etc.
+			\item Involved in setting up builds using Ansible, Run Deck, AWX as a configuration management tools
+			\item Deploying and managing many servers utilizing both traditional and cloud-oriented providers with the Ansible and internal CICD ecosystem system.
+		\end{itemize}
+		\item \textbf{Infrastructure Management and Monitoring}
+		\begin{itemize}
+			\item Experience in setting up Life-cycle policies to back data from on premises to AWS S3/AWS Glacier for archiving.
+			\item Proactively monitor resources and applications using HPOMI including creating alarms to monitor metrics for services like Control-M, CFT, Servers and S3.
+		\end{itemize}
+		\item \textbf{Release Management}
+		\begin{itemize}
+			\item Responsible for deploying 2 tiers and 3 tiers web architecture.
+			\item Document cloud security strategy plans and roadmaps based on enterprise architecture practices.
+			\item Determine baseline cloud security standards for IaaS, PaaS, and SaaS environments
+			\item Conduct security reviews of new and existing cloud providers using industry and vendor best practices.
+			\item Hands-on experience on Architecting and securing the Infrastructure on AWS using IAM, KMS, API Gateway, Cloud Trail, CloudWatch, config, trusted advisor, Security Groups, NACL etc. 
+		\end{itemize}
+		\item \textbf{Project Management}
+		\begin{itemize}
+			\item Maintaining a common documentation library of standardized procedures and configurations
+			\item Communicate with different IT teams to collect the existing on-premises application \& server requirements. Map the collected data points with the resources to plan for the POC.
+		\end{itemize}
+	\end{itemize}
+}
+
+%------------------------------------------------
+%--Experience 3
+%------------------------------------------------
+
+
+\NewEntry{Nov 2009 - Jun 2013}{Sr Linux and Unix Systems Administrator}
+
+\Description{\MarginText{Credit Suisse Group AG, Singapore}
+	\begin{itemize}
+		\item Infrastructure Maintanace and Administration
+		\begin{itemize}
+			\item Implemented process and quality improvements through task automation. Institute infrastructure automation and routine maintenance tasks automation
+			\item Managed Core Banking Applications development lifecycle (Infra Design, Solution Architect, Pricing, Proposal Development and Deployment).
+			\item Improving operation and monitoring of advanced or complex features
+			\item Strong understanding of infrastructure automation tools, Perform various activities for automation practices for the project, including continuous integration, continuous delivery, continuous testing, and continuous monitoring.
+			\item Strong UNIX/Linux experience with Solaris, CentOS, Debian,RHEL, Ubuntu. Write clean, well-documented, and resilient code using Shell \& Python, Perl for Runbook Automation.
+		\end{itemize}
+	\end{itemize}
+}
+
+%------------------------------------------------
+%--Experience 4
+%------------------------------------------------
+
+
+\NewEntry{May 2007 - Nov 2009}{Wipro Project Engineer Global Command Centre.,Bangalore. India}
+
+\Description{\MarginText{Client: Credit Suisse Group AG, India}
+	\begin{itemize}
+		\item \textbf{Infrastructure Management and Monitoring}
+		\begin{itemize}
+			\item Provided Gobal technical support for diagnosing, fixing software and hardware issues. Participated \& involvoed coordinated activities with different support teams for scheduled Power maintenance and Data Centres activities.
+			\item Ensuring availability of the systems on a 24x7 model with stringent SLA’s mapped with business and the vendors on global support model.
+			\item Involved in business meetings on new project kick-off and putting forward inputs from Infrastructure perspective to application team and business teams in terms of growth and volumetric absorbing power in existing infrastructure.
+			\item Following ITIL centric standard for measuring and implementing services enhancements. Ensuring changes are planned and implemented in a sound low risk manner, without creating system outages.
+			\item Monitoring Memory performance, processor utilization, I/O load, disk performance \& file system utilization, facilitating increase the File system size.
+			\item Migration of user and setting file \& Folder level permissions with ACL Security.
+			\item Resolved system errors and crashes, disk space problems, huge file sizes, file system full errors and very good troubleshooting skills on users and groups.
+			\item Control-M Batch Design and Scheduling and Trouble Shooting.
+		\end{itemize}
+	\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+% Certifications
+%------------------------------------------------
+
+\spacedlowsmallcaps{Leadership Skills}
+\newline\quad\\\quad\\
+\Description{\ \  My core strenghts are rigorously question ideas and assumptions, always seek to determine whether the ideas, arguments and findings represent the true picture and are commonly able to recognize inconsistencies and errors in reasoning to achieve the desired outcome to ensure }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ Relationship building. }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\ \ $\cdotp$\ \ Agility and adaptability. }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\ \ $\cdotp$\ \ Innovation and creativity. }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\ \ $\cdotp$\ \ Employee motivation. }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\ \ $\cdotp$\ \ Conflict management. }
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\ \ $\cdotp$\ \ Decision-making skills. }
+
+
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\Description{\MarginText{Communication Skills}2022/23\ \ $\cdotp$\ \ Conducted Cloud Adoption Workshops within Cr\'edit Agricole}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2022\ \ $\cdotp$\ \ Conceived and formed ISAP Academy to train Credit Agricole new joiners}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Fluent}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{Hindi}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{Telugu}}\ \ $\cdotp$\ \ \ Mother Tongue}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
+
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+\Description{\MarginText{Interests}Reading\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Fitness\ \ $\cdotp$\ \ Tennis}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
